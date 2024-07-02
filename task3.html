@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        position: relative;
+        height: 700px;
+        width: 1400px;
+        background-image: url("workplace.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+      #child {
+        padding: 5cm;
+        position: absolute;
+        font-size: large;
+        color: hsl(0, 0%, 100%);
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          fuga voluptatem incidunt, facilis dolorum ipsum sequi, assumenda animi
+          ex reprehenderit commodi, omnis harum! Praesentium, repudiandae
+          perspiciatis. Sit dolorem harum error?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

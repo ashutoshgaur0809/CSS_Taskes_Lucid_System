@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          border-collapse: collapse
+        }
+        th, td {
+          background-color: #96D4D4;
+          border-color: hsl(0, 100%, 44%);
+        }
+        </style>
+</head>
+<body>
+    <div>
+    <div class="nav">
+        <a class="active" href="#image">........................................................................................................................Image.....</a>
+        <a href="#list">.....List.....</a>
+        <a href="#table">.....Table.....</a>
+        <a href="#form">.....Form...........................................................................................................................</a>
+        <br>
+        <br>
+    </div>
+    <div class="img" id="image">
+          <img src="workplace.jpg" width="40%" height="30%"  />
+          <!-- <img src="w3schools.jpg" width="40%" height="30%"/> -->
+
+    </div>
+    
+      <div class="List" id="list">
+        <ul>
+            <li>Create</li>
+            <strong>Create:</strong> Create new items in the system
+            <li>Update</li>
+            <strong>Update:</strong> Modify existing items in the system.
+            <li>Read</li>
+            <strong>Read:</strong> View details of items in the system.
+            <li>Delete</li>
+            <strong>Delete:</strong> Remove items from the system permanently.
+        </ul>
+      </div>
+      <br><br><br>
+        <table style="width:100%" id="table">
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Technology</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </table>
+      <form action="" id="form">
+        <label for="fname">First Name</label>
+        <input type="text"><br>
+        <label for="lname">Last Name</label>
+        <input type="text"><br>
+        <label for="Email">Email</label>
+        <input type="email"><br>
+        <label for="Pass">Password</label>
+        <input type="password"><br>
+        <label for="Phn">Mobile Number </label>
+        <input type="number"><br>
+        <label for="Gender">Gender</label>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Male</label>
+        <input type="radio" id="css" name="fav_language" value="CSS ">
+        <label for="css">Female</label><br>
+        <label for="Location">Location</label>
+        <input type="text">
+        <br>
+        <input type="submit">
+        <input type="reset">
+      </form>
+    </div> 
+</body>
+</html>

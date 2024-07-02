@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Navbar Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  background-image: url('your-blurred-background-image.jpg'); /* Replace with your blurred background image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
+      .navbar {
+        display: flex;
+        background-color: #333;
+        padding: 10px;
+      }
+
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-item:hover {
+        background-color: hsl(0, 11%, 44%);
+      }
+
+      #parent {
+        position: relative;
+        height: 800px;
+        width: 100%;
+        background-image: url('tech.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+      #child {
+        padding: 6cm;
+        position: absolute;
+        font-size: larger;
+        color: hsl(0, 0%, 100%);
+        
+        /* z-index: 1; */
+      }
+    
+
+      #form {
+        /* margin-top: 1cm; */
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #333;
+        padding: 20px;
+        z-index: 1;
+        background-image: linear-gradient(to right,#220e3f,#24528d);
+      }
+
+      label {
+        /* text-align: center; */
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: white;
+      }
+
+      input {
+        /* text-align: center; */
+        padding-top: 0.25cm;
+
+        border-radius: 5%;
+      }
+      .button {
+        background-color: #04aa6d; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+      }
+      .button2:hover {
+        box-shadow: 0 12px 16px 0 hsl(234, 78%, 49%),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      #table th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  
+}
+      #table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        background-color: #96d4d4;
+        border-color: hsl(0, 100%, 44%);
+        text-align: left;
+      }
+      #table {
+        margin-top: 1cm;
+        margin-bottom: 1cm ;
+        padding-left: 3.54cm;
+        width: 80%;
+        overflow: auto;
+        height: 200px;
+      }
+
+      .gender{
+        display: flex;
+        gap: 10px;
+      }
+      input:focus {
+    outline:none;
+}
+    marquee{
+        background-color: #04aa6d;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+    <a href=""> <i class="fa-solid fa-microchip" style="color: white; padding-top:10px ;"></i></a>
+      <a href="#parent" class="nav-item">Home</a>
+      <a href="#form" class="nav-item">Form</a>
+      <a href="#table" class="nav-item">Table</a>
+      <a href="#footer" class="nav-item">Footer</a>
+    </nav>
+
+    <!-- image with text -->
+    <div id="parent">
+      <div id="child">
+        <h1>Technology</h1>
+      </div>
+    </div>
+
+    <!-- form -->
+     <br>
+    <marquee style="background-color: #04aa6d;"  direction="left" >Form</marquee><br><br>
+    <form action="" id="form">
+        <h1 style="color: white;">Contact Us!</h1>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" size="52"><br>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname"  size="52"><br>
+        <br>
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" size="52"><br>
+        <br>
+        <label for="Pass">Password</label>
+        <input type="password" id="Pass" name="Pass" size="52"><br>
+        <br>
+        <label for="Phn">Mobile Number</label>
+        <input type="tel" id="Phn" name="Phn" size="52"><br><br>
+
+        
+          <label>Gender</label>
+          <div class="gender">
+          <div>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male </label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female"> Female</label>
+        </div>
+    </div>
+        </div><br>
+        
+        <label for="Location">Location</label>
+        <input type="text" id="Location" name="Location" size="52">
+        
+        <br><br>
+        <input class="button button2" style="float: right;" type="submit" value="Submit">
+        <input class="button button2" type="reset" value="Reset">
+      </form>
+
+      <!-- table -->
+       <br>
+      <marquee style="background-color: #04aa6d;"  direction="left" >Table</marquee>
+      <div id="table" >
+        <table style="width:100%;" >
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Technology</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        </table>
+      </div>
+<marquee style="background-color: #04aa6d;"  direction="left" >Footer</marquee><br><br>
+      <!-- FOOTER -->
+       <div class="foot" id="footer" style="background-image: linear-gradient(to right,#220e3f,#24528d); color: white; text-align: center; padding: 20px;">
+        
+        <i class="fa-solid fa-phone" style="padding-top: 1cm;"> 7 0 1 4 7 2 9 8 9 6</i>
+        <br>
+        <i class="fa-solid fa-envelope" style="padding-top: 1cm;"> A s h u t o s h g a u r 0 8 0 9 @ g m a i l . c o m </i>
+        <br>
+        <i class="fa-solid fa-location-dot" style="padding-top: 1cm;"> 1 5 3 , M a h a m a n d i r</i>
+
+       </div>
+  </body>
+</html>
